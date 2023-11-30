@@ -133,25 +133,31 @@ table {
 .container {
   width: 1200px;
   margin: 0 auto;
-  font-size: 0;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.first-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .first-row > div {
   width: 400px;
   height: 400px;
   outline: 1px solid red;
   background: lightskyblue;
-  display: inline-block;
-  font-size: 16px;
+  float: left;
 }
 
 .second-row > div {
   background: yellow;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
+  float: left;
+}
+.second-row::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .second-row-left-column {
   width: 800px;
@@ -173,9 +179,12 @@ table {
 
 .third-row > div {
   background: orange;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
+  float: left;
+}
+.third-row::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .third-row-left-column {
   width: 400px;
@@ -189,16 +198,16 @@ table {
   height: 200px;
   outline: 1px solid red;
 }
-.third-row-right-column-bottom {
-  font-size: 0;
+.third-row-right-column-bottom::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .third-row-right-column-bottom > div {
-  vertical-align: top;
   width: 400px;
   height: 200px;
   outline: 1px solid red;
-  display: inline-block;
-  font-size: 16px;
+  float: left;
 }
 .third-row-right-column-bottom > div > div {
   width: 400px;
