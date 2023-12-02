@@ -136,29 +136,23 @@ table {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.first-row::after {
-  content: "";
-  display: block;
-  clear: both;
+.first-row {
+  display: flex;
 }
 .first-row > div {
   width: 400px;
   height: 400px;
   outline: 1px solid red;
   background: lightskyblue;
-  float: left;
+}
+.second-row {
+  display: flex;
 }
 
 .second-row > div {
   background: yellow;
-  float: left;
 }
-.second-row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
 .second-row-left-column {
   width: 800px;
 }
@@ -176,16 +170,13 @@ table {
   height: 133.33px;
   outline: 1px solid red;
 }
-
+.third-row {
+  display: flex;
+}
 .third-row > div {
   background: orange;
-  float: left;
 }
-.third-row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
 .third-row-left-column {
   width: 400px;
   height: 400px;
@@ -198,16 +189,13 @@ table {
   height: 200px;
   outline: 1px solid red;
 }
-.third-row-right-column-bottom::after {
-  content: "";
-  display: block;
-  clear: both;
+.third-row-right-column-bottom {
+  display: flex;
 }
 .third-row-right-column-bottom > div {
   width: 400px;
   height: 200px;
   outline: 1px solid red;
-  float: left;
 }
 .third-row-right-column-bottom > div > div {
   width: 400px;
